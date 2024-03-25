@@ -105,8 +105,8 @@ ClientBin/
 node_modules/
 orleans.codegen.cs
 
-/UIProject/appsettings*
-/APIProject/appsettings*
+#appsettings
+/APIProject/appsettings.json
 
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
