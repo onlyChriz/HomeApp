@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\boffe\\source\\repos\\HomeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7540BE68-330B-4474-8C9D-5DC0653AC288}|API\\API.csproj|c:\\users\\boffe\\source\\repos\\homeapp\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7540BE68-330B-4474-8C9D-5DC0653AC288}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8920D5F3-5E0E-483C-94FC-1E670BA32A91}|UI\\UI.csproj|c:\\users\\boffe\\source\\repos\\homeapp\\ui\\components\\pages\\tasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8920D5F3-5E0E-483C-94FC-1E670BA32A91}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\tasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 287,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\boffe\\source\\repos\\HomeApp\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "C:\\Users\\boffe\\source\\repos\\HomeApp\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-25T09:20:08.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\boffe\\source\\repos\\HomeApp\\API\\Repository\\TaskRepository.cs",
               "RelativeDocumentMoniker": "API\\Repository\\TaskRepository.cs",
@@ -42,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TasksToDoController.cs",
               "DocumentMoniker": "C:\\Users\\boffe\\source\\repos\\HomeApp\\API\\Controllers\\TasksToDoController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\TasksToDoController.cs",
@@ -54,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TaskModel.cs",
               "DocumentMoniker": "C:\\Users\\boffe\\source\\repos\\HomeApp\\UI\\Models\\TaskModel.cs",
               "RelativeDocumentMoniker": "UI\\Models\\TaskModel.cs",
@@ -66,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Tasks.razor",
               "DocumentMoniker": "C:\\Users\\boffe\\source\\repos\\HomeApp\\UI\\Components\\Pages\\Tasks.razor",
               "RelativeDocumentMoniker": "UI\\Components\\Pages\\Tasks.razor",
