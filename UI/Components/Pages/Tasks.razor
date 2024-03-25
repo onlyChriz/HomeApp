@@ -1,0 +1,67 @@
+﻿@page "/task"
+
+@inject IHttpClientFactory _clientFactory
+
+<PageTitle>Tasks</PageTitle>
+
+<h1>Tasks</h1>
+
+@if(string.IsNullOrWhiteSpace(errorString) == false)
+{
+    <div class="h2">@errorString</div>
+}
+else if(tasks is null)
+{
+    <div class="h4">Loading...</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Complete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var w in tasks)
+            {
+                <tr>
+                    <td>@w.Name</td>
+                    <td>@w.Description</td>
+                    <td>@w.Date</td>
+                    <th>@w.IsCompleted</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+@code {
+        List<ToDoTask> tasks;
+        string errorString;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get,
+            "https://localhost:7225/TasksToDo/GetAll");
+
+        var client = _clientFactory.CreateClient();
+
+        HttpResponseMessage respone = await client.SendAsync(request);
+
+        if(respone.IsSuccessStatusCode)
+        {
+            tasks = await respone.Content.ReadFromJsonAsync<List<ToDoTask>>();
+            errorString = null;
+        }
+        else
+        {
+            errorString = $"There was a error to get the tasks; { respone.ReasonPhrase }";
+        }
+    }
+}

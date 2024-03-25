@@ -1,0 +1,131 @@
+[
+  {
+    "ContainingType": "HomeApp.API.Controllers.ToDoTasksController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/ToDoTasks/ToDoTasks/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HomeApp.API.Controllers.ToDoTasksController",
+    "Method": "GetAllTasks",
+    "RelativePath": "api/ToDoTasks/ToDoTasks/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HomeApp.API.Controllers.ToDoTasksController",
+    "Method": "GetTaskById",
+    "RelativePath": "api/ToDoTasks/ToDoTasks/GetTaskById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HomeApp.API.Controllers.ToDoTasksController",
+    "Method": "CreateTask",
+    "RelativePath": "api/ToDoTasks/ToDoTasks/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toDoTask",
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "HomeApp.API.Controllers.ToDoTasksController",
+    "Method": "UpdateTask",
+    "RelativePath": "api/ToDoTasks/ToDoTasks/Put/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "toDoTask",
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HomeApp.API.Models.ToDoTask",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
